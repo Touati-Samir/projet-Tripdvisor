@@ -1,0 +1,268 @@
+/* GLOBAL STYLE */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: TS-Reg, sans-serif;
+}
+
+.container {
+  width: 1135px;
+  margin: 0 auto;
+}
+
+.test {
+  border: 1px solid red;
+}
+
+h1 {
+  font-family: TS-med;
+  font-size: 50px;
+  margin-bottom: 100px;
+  font-weight: bold;
+}
+
+h1 span {
+  color: orangered;
+}
+
+h2 {
+  font-size: 30px;
+  font-size: TS-med;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* ---------- */
+
+/* HEADER */
+
+header {
+  height: 60px;
+  border-bottom: 1px solid grey;
+  position: sticky;
+  top: 0px;
+}
+
+header > div {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
+}
+
+header img {
+  height: 40px;
+}
+
+.navigation-header a:not(:first-child) {
+  margin-left: 20px;
+}
+
+.navigation-header button {
+  margin-left: 20px;
+}
+
+.navigation-header a {
+  padding: 10px;
+  border-radius: 18px;
+  border: 1px solid red;
+}
+
+.navigation-header a:hover {
+  background-color: #f2f2f2;
+}
+
+header a {
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+header button {
+  border: none;
+  padding: 12px 15px;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
+
+/* -------- */
+/* MAIN */
+
+main {
+  padding-top: 100px;
+}
+
+.navigation-menu {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 100px;
+}
+
+.navigation-menu > div {
+  font-family: TS-Med;
+  padding: 12px;
+  border: 1px solid black;
+  border-radius: 12px;
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pictures-bloc {
+  height: 430px;
+  margin-bottom: 100px;
+  display: flex;
+  gap: 2px;
+}
+
+/* LEFT BLOC */
+
+.left-bloc {
+  background: orangered;
+  height: 100%;
+  flex: 1;
+}
+
+.left-bloc img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ---- */
+
+.right-bloc {
+  /* background-color: blue;s */
+  width: 480px;
+  height: 100%;
+}
+
+.right-bloc > div {
+  height: calc(50% - 1px);
+  width: 100%;
+}
+
+.right-bloc img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.right-bloc div:first-child {
+  margin-bottom: 2px;
+}
+/* ---------------- */
+
+/* --------------- */
+
+/* SECONDE SECTION */
+
+.seconde-section {
+  margin-bottom: 100px;
+  display: flex;
+  /* background-color: aquamarine; */
+  justify-content: space-between;
+}
+
+.city-desc {
+  /* flex: 3; */
+  width: 50%;
+  padding-right: 150px;
+}
+
+.bloc-map {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.map-text {
+  padding: 20px;
+  background-color: orangered;
+}
+
+.map-img {
+  height: 190px;
+  object-fit: cover;
+  /* background-color: blue; */
+}
+
+/* --------------- */
+
+/* THIRD SECTION */
+
+.third-section {
+  border: 2px solid green;
+  margin-bottom: 100px;
+}
+
+.third-section-main {
+  border: 2px solid blue;
+  display: flex;
+}
+
+.third-desc {
+  background-color: red;
+  flex: 1;
+  padding: 10px;
+}
+
+.third-caroussel {
+  background-color: pink;
+  flex: 3;
+  display: flex;
+  gap: 10px;
+  overflow-x: scroll;
+}
+
+.third-caroussel > div {
+  width: calc((100% - 30px) / 3);
+  flex-shrink: 0;
+  background-color: lightblue;
+  border: 1px solid black;
+}
+
+.relativ-div {
+  position: relative;
+}
+
+.third-caroussel > div img {
+  width: 100%;
+}
+
+.heart-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.background-div {
+  height: 150px;
+  background-image: url("../imgs/toulouse2.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+/* ------------- */
